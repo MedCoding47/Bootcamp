@@ -1,20 +1,12 @@
-using System;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
-
-public class Program
-{
-  
-    static void SayHello(string name)
+     void SayHello(string name)
     {
         Console.WriteLine($"Hello, {name}!");
     }
 
-    public static void Main(string[] args)
-    {
+ 
       
         Console.WriteLine("## Exercise 1");
-        Console.WriteLine("Hello World!");
+        Console.WriteLine("Welcome to C# Programming!");
         Console.WriteLine("\n");
 
 
@@ -24,7 +16,7 @@ public class Program
         int age = 21;           
 
         Console.WriteLine($"My name is {name} and I am {age} years old.");
-        Console.WriteLine("\n");
+        Console.WriteLine("\n"); 
 
 
         Console.WriteLine("## Exercise 3");
@@ -63,7 +55,7 @@ public class Program
                 counter--;
             }
     
-                Console.WriteLine("finish!");
+                Console.WriteLine("Liftoff!!");
                 Console.WriteLine("\n");
 
 
@@ -86,5 +78,40 @@ public class Program
             }
         }
 
-           }
+Console.WriteLine("Ex 8");
+Console.Write("Enter temperature in Celsius: ");
+
+double celsius = double.Parse(Console.ReadLine());
+double fahrenheit = celsius * 9.0 / 5.0 + 32;
+
+Console.WriteLine($"{celsius}°C = {fahrenheit}°F");
+Console.WriteLine();
+
+
+
+Console.WriteLine("Ex 9");
+
+int a = 10;
+int b = 20;
+
+Console.WriteLine($"Before swap: a = {a}, b = {b}");
+
+int temp = a;
+a = b;
+b = temp;
+
+Console.WriteLine($"After swap: a = {a}, b = {b}");
+Console.WriteLine();
+
+
+Console.WriteLine("Ex 10");
+
+Console.Write("Enter a number: ");
+
+int number = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"{number} x {i} = {number * i}");
 }
+Console.WriteLine();
