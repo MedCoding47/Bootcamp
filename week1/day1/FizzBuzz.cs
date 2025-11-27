@@ -21,8 +21,7 @@ else
 }
 
 
-Console.WriteLine("Exercise :Build a Triangle Pattern ");
-
+ 
 for (int i = 1; i <= 5; i++)
 {
     Console.WriteLine(new string('*', i));
